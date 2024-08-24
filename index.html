@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Basic Project </title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-teal-950 overflow-x-hidden">
+
+    <!-- Nav Bar -->
+
+    <div class="container mx-auto mt-5 bg-teal-600 rounded-full border-4 border-white duration-300 ">
+        <nav class="flex justify-between items-center">
+            <div class="my-2">
+                <img class="w-16 h-16 ml-3 rounded-full border-2 border-teal-600 hover:border-2 hover:border-white duration-500 " src="pictures/cdm.jpg" alt="cdm.png">
+            </div>
+            <ul class="md:flex md:gap-4 text-lg hidden text-cyan-950">
+                <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline hover:text-shadow-2xl">Services</li>
+                <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline hover:text-shadow-2xl">Pricing</li>
+                <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline hover:text-shadow-2xl">About</li>
+                <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline hover:text-shadow-2xl">Contact</li>
+            </ul>
+            <button
+                class="bg-teal-950 text-white p-1 px-5 mr-5 rounded-full hover:bg-teal-800 font-cp hidden md:block border-2 border-teal-600 hover:border-2 hover:border-white duration-300">Sign
+                up
+            </button>
+            <button class="md:hidden icon">
+                <img class="mr-10 md:hidden" src="pictures/menu.svg" alt="menu">
+            </button>
+        </nav>
+    </div>
+
+    <!-- Mobile Nav -->
+
+    <div class="hidden md:hidden menu mt-5">
+        <ul class="flex flex-col items-center gap-4 text-lg text-gray-500">
+            <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline">Services</li>
+            <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline">Pricing</li>
+            <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline">About</li>
+            <li class="hover:text-white font-cp transition-transform duration-300 ease-in-out hover:scale-110 hover:underline">Contact</li>
+            <li>
+                <button
+                    class="bg-teal-600 text-white p-1 px-5 mr-5 rounded-full hover:bg-teal-950 font-cp ml-5 border-2 border-teal-950 hover:border-2 hover:border-teal-600">Sign
+                    up
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+
+    <div class="container mx-auto mt-5 flex flex-col md:flex-row">
+        <div class="md:w-1/2 text-center px-6">
+            <p class="text-gray-300 md:pt-12"><span class="transition-transform hover:scale-110">Lorem</span> ipsum dolor sit amet consectetur,
+                adipisicing elit. Minus, alias placeat repellat,
+                possimus cumque, iusto enim iure asperiores neque beatae quae.
+                Similique soluta exercitationem sequi
+                expedita esse quo tempore omnis?Lorem ipsum dolor sit amet,
+                 consectetur adipisicing elit.
+            </p>
+            <button
+                class="py-1 px-4 mt-5 mb-5 md:mb-0 font-medium text-white bg-teal-600 font-cp hover:bg-teal-950 border-2 border-teal-950 hover:border-2 hover:border-white duration-300 rounded-full">Get
+                Start</button>
+        </div>
+
+        <div class="md:w-1/2">
+            <img class="rounded-full" src="pictures/hero.png" alt="hero">
+        </div>
+    </div>
+
+    <!-- Main Section -->
+
+    <div class="container mx-auto text-gray-300 flex mt-12 text-center items-center flex-col md:flex-row">
+        <div class="md:w-1/3 flex flex-col items-center px-6">
+            <h2 class="text-2xl text-teal-700 hover:underline duration-500 transition-transform ease-in-out hover:scale-105">Web Development</h2>
+            <img class="h-40 w-40" src="pictures/web.svg" alt="web">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum sed consectetur ad quisquam architecto modi repellat
+                doloribus quia amet ipsa.
+            </p>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center px-6">
+            <h2 class="md:mt-0 mt-10 text-2xl text-teal-700 hover:underline duration-500 transition-transform ease-in-out hover:scale-105">Mobile App Development</h2>
+            <img class="h-40 w-40" src="pictures/mobile.svg" alt="web">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum sed consectetur ad quisquam architecto modi repellat
+                doloribus quia amet ipsa.
+            </p>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center px-6">
+            <h2 class="md:mt-0 mt-10 text-2xl text-teal-700 hover:underline duration-500 transition-transform ease-in-out hover:scale-105">Design</h2>
+            <img class="h-40 w-40" src="pictures/design.svg" alt="web">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum sed consectetur ad quisquam architecto modi repellat
+                doloribus quia amet ipsa.
+            </p>
+        </div>
+    </div>
+
+    <!-- Price Section -->
+
+    <div class=" text-gray-400 mt-12">
+
+        <div class="text-center">
+            <h1 class="text-3xl text-teal-500"><span class="hover:text-teal-200 duration-300">Pricing</span></h1>
+            <h2 class="font-thin text-xl">
+                <span class="hover:text-white">Offers</span> 
+                <span class="hover:text-white">Multiple</span> 
+                <span class="hover:text-white">Packages</span> 
+                <span class="hover:text-white">for</span> 
+                <span class="hover:text-white">Monthly</span> 
+                <span class="hover:text-white">and</span> 
+                <span class="hover:text-white">Yearly</span> 
+                <span class="hover:text-white">Subscriptions</span>
+            </h2>
+            <h2 class="font-thin text-xl"><span class="hover:text-white">Featured</span> <span class="hover:text-white">plans</span> 
+                <span class="hover:text-white">are</span>
+                <span class="hover:text-white">here.</span> </h2>
+        </div>
+
+        <div class="flex flex-col items-center  md:flex md:flex-row md:justify-center mb-10">
+            <div class="bg-teal-700 text-black rounded-3xl text-center mt-10 md:ml-10 md:mr-10 w-60 hover:shadow-lg hover:shadow-teal-600 duration-300 border-4 border-teal-300 hover:border-4 hover:border-white transition-transform ease-in-out hover:scale-105">
+                <h1 class="font-price text-3xl text-shadow-lg">$99</h1>
+                <h5 class="font-price text-teal-950">Basic</h5>
+                <p class="font-cp">All the basic features are inclueded</p>
+                <ul class="ml-7">
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-5" src="pictures/minus.png" alt="checked">
+                        </div>
+                        <div class="ml-1">
+                            Customized Features
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-5" src="pictures/minus.png" alt="checked">
+                        </div>
+                        <div class="ml-1">
+                            Dual Infrastructure
+                        </div>
+                    </li>
+                </ul>
+                <button
+                    class="py-1 px-4 mt-5 font-medium text-white bg-teal-950 font-cp hover:bg-teal-800 border-2 border-teal-600 hover:border-2 hover:border-white duration-300 rounded-full bottom-0 transform translate-y-4 ">Get
+                    Start</button>
+            </div>
+
+            <div class="bg-teal-700 text-black rounded-3xl text-center mt-10 md:mr-10 w-60 hover:shadow-lg hover:shadow-teal-600 duration-300 border-4 border-teal-300 hover:border-4 hover:border-white transition-transform ease-in-out hover:scale-105">
+                <h1 class="font-price text-3xl  text-shadow-lg">$199</h1>
+                <h5 class="font-price text-teal-950">Advanced</h5>
+                <p class="font-cp">All the basic features are inclueded</p>
+                <ul class="ml-7">
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div class="ml-1">
+                            Customized Features
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-5" src="pictures/minus.png" alt="checked">
+                        </div>
+                        <div class="ml-1">
+                            Dual Infrastructure
+                        </div>
+                    </li>
+                </ul>
+                <button
+                    class="py-1 px-4 mt-5 font-medium text-white bg-teal-950 font-cp hover:bg-teal-800 border-2 border-teal-600 hover:border-2 hover:border-white duration-300 rounded-full bottom-0 transform translate-y-4">Get
+                    Start</button>
+            </div>
+
+            <div class="bg-teal-700 text-black rounded-3xl text-center mt-10 md:mr-10 w-60 hover:shadow-lg hover:shadow-teal-600 duration-300 border-4 border-teal-300 hover:border-4 hover:border-white transition-transform ease-in-out hover:scale-105">
+                <h1 class="font-price text-3xl text-shadow-lg">$299</h1>
+                <h5 class="font-price text-teal-950">Business</h5>
+                <p class="font-cp">All the basic features are inclueded</p>
+
+                <ul class="ml-7">
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div>
+                            Core Business System
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div class="ml-1">
+                            Customized Features
+                        </div>
+                    </li>
+
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <img class="h-6" src="pictures/checked.png" alt="checked">
+                        </div>
+                        <div class="ml-1">
+                            Dual Infrastructure
+                        </div>
+                    </li>
+                </ul>
+
+                <button
+                    class="py-1 px-4 mt-5 font-medium text-white bg-teal-950 font-cp hover:bg-teal-800 border-2 border-teal-600 hover:border-2 hover:border-white duration-300 rounded-full bottom-0 transform translate-y-4">Get
+                    Start
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stories section -->
+
+    <div class="text-white mt-5">
+        <div class="flex flex-col items-center">
+            <p class="text-green-300">Recent Updates</p>
+            <p class="text-5xl font-thin text-teal-800 text-center ">
+                <span class="hover:text-teal-300">F</span><span class="hover:text-teal-300">e</span><span class="hover:text-teal-300">a</span><span class="hover:text-teal-300">t</span><span class="hover:text-teal-300">u</span><span class="hover:text-teal-300">r</span><span class="hover:text-teal-300">e</span><span class="hover:text-teal-300">d</span> 
+                <span class="hover:text-teal-300">S</span><span class="hover:text-teal-300">t</span><span class="hover:text-teal-300">o</span><span class="hover:text-teal-300">r</span><span class="hover:text-teal-300">i</span><span class="hover:text-teal-300">e</span><span class="hover:text-teal-300">s</span></p>
+        </div>
+
+        <div class="flex flex-col items-center md:flex md:flex-row md:justify-center text-gray-300 mt-10">
+            <div class="bg-teal-950 rounded-3xl text-center hover:shadow-lg hover:shadow-teal-600 mx-6 w-52 h-72 border-4 border-teal-950 hover:border-4 hover:border-white transition-transform duration-500 ease-in-out hover:scale-105">
+                <img class="container mt-5 w-32 h-32 mx-auto mb-3 shadow-lg shadow-black border-4 border-white rounded-3xl" src="https://picsum.photos/200?random=1" alt="">
+                <h2 class="text-teal-700 font-cp text-xl">Google Rankings</h2>
+                <p class="pt-3">Make it connect with every client worldwide</p>
+                <h5 class="text-teal-600 font-price pt-1 hover:text-teal-200">Read More</h5>
+            </div>
+
+            <div class="bg-teal-950 rounded-3xl text-center mt-10 md:mt-0 md:ml-10 hover:shadow-lg hover:shadow-teal-500 mx-6 w-52 h-72 border-4 border-teal-950 hover:border-4 hover:border-white transition-transform duration-500 ease-in-out hover:scale-105">
+                <img class="container mt-5 w-32 h-32 mx-auto mb-3 shadow-lg shadow-black border-4 border-white rounded-3xl" src="https://picsum.photos/200?random=2" alt="">
+                <h2 class="text-teal-700 font-cp text-xl">Communication</h2>
+                <p class="pt-3">Make it connect with every client worldwide</p>
+                <h5 class="text-teal-600 font-price pt-1 hover:text-teal-200">Read More</h5>
+            </div>
+
+            <div class="bg-teal-950 rounded-3xl text-center mt-10 md:mt-0 md:ml-10 hover:shadow-lg hover:shadow-teal-600 mx-6 w-52 h-72 border-4 border-teal-950 hover:border-4 hover:border-white transition-transform duration-500 ease-in-out hover:scale-105">
+                <img class="container mt-5 w-32 h-32 mx-auto mb-3 shadow-lg shadow-black border-4 border-white rounded-3xl" src="https://picsum.photos/200?random=3" alt="">
+                <h2 class="text-teal-700 font-cp text-xl">Remote Working</h2>
+                <p class="pt-3">Make it connect with every client worldwide</p>
+                <h5 class="text-teal-600 font-price pt-1 hover:text-teal-200">Read More</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Last section flex flex-col items-center md:flex-row md:flex md:justify-between -->
+
+    <div class="bg-teal-950 mt-5 ">
+        <div class="container mx-auto p-5 gap-4">
+            <div class="flex justify-center">
+                <h1 class="font-cp text-gray-500 text-sm">  © Copyright 2024, Tailwind Inc.</h1>
+            </div>
+            <!-- <div class="flex w-1/2 justify-center">
+                <div class="flex gap-4 text-white">
+                    <h3 class="font-cp text-xl">Links</h3>|
+                    <p class="text-lg text-black font-cp hover:text-white">Product</p>|
+                    <p class="text-lg text-black font-cp hover:text-white">About</p>
+                </div>
+            </div> -->
+
+            <h5 class="font-cp text-center text-white mt-2">Follow us</h5>
+
+            <div class="flex gap-4 mt-2 justify-center">
+                <button class="rounded-xl">
+                    <img class="w-10 h-10 hover:filter hover:invert transition-transform ease-in-out hover:scale-110 duration-700" src="pictures/facebook.png" alt="">
+                </button>
+                <button class="rounded-xl">
+                    <img class="w-10 h-10 hover:filter hover:invert transition-transform ease-in-out hover:scale-110 duration-700" src="pictures/twitter.png" alt="">
+                </button>
+                <button class="rounded-xl">
+                    <img class="w-10 h-10 hover:filter hover:invert transition-transform ease-in-out hover:scale-110 duration-700" src="pictures/instagram.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+
+    <script>
+        const icon = document.querySelector('.icon');
+        const menu = document.querySelector('.menu');
+
+        icon.addEventListener('click', () => {
+            menu.classList.toggle('hidden')
+        })
+    </script>
+
+</body>
+</html>
